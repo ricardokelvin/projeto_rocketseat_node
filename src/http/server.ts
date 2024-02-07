@@ -1,10 +1,10 @@
 import fastify from 'fastify'
-import { creatPoll } from './routes/create_poll';
+import { createPoll } from './routes/create_poll';
 
 //METODOS: GET, POST, PUT, DELETE, PATCH, HEAD, OPTIONS
 const app = fastify();
 
-app.register(creatPoll)
+app.register(createPoll)
 
 app.listen({ port: 3333 }).then(() => {
     console.log("HTTP Server running now!");
